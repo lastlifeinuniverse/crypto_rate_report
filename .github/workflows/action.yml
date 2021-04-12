@@ -18,8 +18,8 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 465
-          username: sgusgroup10@gmail.com
-          password: Sgus@group10##
+          username: "sgusgroup10@gmail.com"
+          password: "Sgus@group10##"
           subject: Weather Report (${{env.REPORT_DATE}})
           body: file://result.html
           to: lastlifeinuniverse@gmail.com
