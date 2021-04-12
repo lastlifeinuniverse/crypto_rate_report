@@ -22,6 +22,6 @@ jobs:
           password: "Sgus@group10##"
           subject: Weather Report (${{env.REPORT_DATE}})
           body: file://result.html
-          to: lastlifeinuniverse@gmail.com
+          to: sgusgroup10@gmail.com
           from: GitHub Actions
           content_type: text/html
