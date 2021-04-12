@@ -1,4 +1,4 @@
-name: 'GitHub Actions Crpto Rates Bot'
+name: 'GitHub Actions Crypto Rates Bot'
 
 on:
   workflow_dispatch
