@@ -1,4 +1,4 @@
-name: 'GitHub Actions Weather Bot'
+name: 'GitHub Actions Crpto Rates Bot'
 
 on:
   workflow_dispatch
@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: 'Checkout codes'
         uses: actions/checkout@v1
-      - name: 'Get Weather'
+      - name: 'Get Rate'
         run: bash ./get_rate.sh
       - name: 'Get Date'
         run: echo "REPORT_DATE=$(TZ=':Asia/Singapore' date '+%Y-%m-%d %T')" >> $GITHUB_ENV
@@ -20,7 +20,7 @@ jobs:
           server_port: 587
           username: "sgusgroup10@gmail.com"
           password: "Sgus@group10##"
-          subject: Weather Report (${{env.REPORT_DATE}})
+          subject: Daily Crypto Rate Report (${{env.REPORT_DATE}})
           body: file://result.html
           to: sgusgroup10@gmail.com
           from: GitHub Actions
