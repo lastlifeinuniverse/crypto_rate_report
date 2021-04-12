@@ -1,2 +1,2 @@
-# weather_report
-Send weather report through daily email
+# crypto_rates_report
+Send crypto rates through daily email
